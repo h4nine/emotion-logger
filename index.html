@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="emotion.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Playwrite+IE:wght@100..400&family=Schoolbell&display=swap"
+      rel="stylesheet"
+    />
+    <title>Emotion Logger</title>
+  </head>
+  <body>
+    <h1>Welcome !</h1>
+    <h2>this is an emotion logger, created by hanine, for you.</h2>
+    <h3>Click the button below to start logging your emotions.</h3>
+    <label for="user">who's with us today?</label>
+    <select id="user" name="user">
+      <option value="hanine">hanine</option>
+      <option value="yosr">yosr</option>
+      <option value="sol">soleane</option>
+    </select>
+    <br /><br />
+    <button id="startButton" onclick="startLogging()">Start Logging</button>
+    <script>
+      function startLogging() {
+        window.location.href = "emotion.html";
+      }
+    </script>
+    <script src="emotion.js"></script>
+  </body>
+</html>

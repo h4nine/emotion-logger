@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="emotion.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Playwrite+IE:wght@100..400&family=Schoolbell&display=swap"
+      rel="stylesheet"
+    />
+    <title>Emotion Logger</title>
+  </head>
+
+  <body>
+    <h1>welcome, ...*name*</h1>
+    <a href="index.html">
+      <p>not you? go back</p>
+    </a>
+    <div id="emotionContainer">
+      <h2>Log Your Emotion</h2>
+      <label for="emotion">Select your emotion:</label>
+      <select id="emotion">
+        <option value="happy">Happy</option>
+        <option value="sad">Sad</option>
+        <option value="angry">Angry</option>
+        <option value="surprised">Surprised</option>
+        <option value="neutral">Neutral</option>
+      </select>
+      <br /><br />
+      <label for="description">tell me more:</label>
+      <br />
+      <textarea id="description" rows="4" cols="50"></textarea>
+      <br /><br />
+      <button id="logButton">Log Emotion</button>
+    </div>
+    <br />
+    <button onclick="toggleLogs()">see your logs</button>
+
+    <div id="seelogs" style="display: none">
+      <h1>Recent Logs</h1>
+      <div id="recentLogs"></div>
+    </div>
+
+    <script src="emotion.js"></script>
+    <script src="emotion_log.js"></script>
+    <p>thank you! see you next time</p>
+  </body>
+</html>
